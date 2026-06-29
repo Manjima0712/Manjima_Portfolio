@@ -78,3 +78,5 @@ def freeze():
 if __name__ == "__main__":
     print("Freezing Flask app to static HTML...\n")
     freeze()
+# End of freeze script
+
