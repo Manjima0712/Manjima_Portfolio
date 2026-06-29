@@ -1,17 +1,65 @@
 /* Base Variables & Theme */
 :root {
-    --bg-primary: #050816;
-    --bg-secondary: #0F172A;
+    --bg-primary: #0F172A;
+    --bg-secondary: #1E293B;
     --color-cyan: #06B6D4;
     --color-purple: #8B5CF6;
-    --color-blue: #3B82F6;
-    --text-white: #ffffff;
-    --text-gray: #94a3b8;
+    --color-blue: #2563EB;
+    --color-primary: #2563EB;
+    --color-secondary: #06B6D4;
+    --text-white: #F8FAFC;
+    --text-gray: #94A3B8;
     --font-primary: 'Poppins', sans-serif;
     --font-space: 'Space Grotesk', sans-serif;
-    --glass-bg: rgba(15, 23, 42, 0.45);
+    --glass-bg: rgba(30, 41, 59, 0.65);
     --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: rgba(0, 0, 0, 0.4);
+    --glass-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Highlighted Resume Nav Button */
+.btn-gradient-highlight {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    border: none !important;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-gradient-highlight:hover {
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.theme-toggle-btn:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+/* Floating Resume Button */
+.floating-resume {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    z-index: 999;
+    display: none;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 * {
@@ -67,6 +115,7 @@ body {
 .text-purple { color: var(--color-purple) !important; }
 .text-blue { color: var(--color-blue) !important; }
 .text-gray { color: var(--text-gray); }
+.text-white { color: var(--text-white) !important; }
 
 .tracking-wider {
     letter-spacing: 0.15em;
@@ -850,13 +899,13 @@ body {
 
 /* Multi-page styling additions */
 .main-content-wrapper {
-    margin-top: 75px; /* offset for fixed navbar */
-    min-height: calc(100vh - 155px); /* fill space between navbar and footer */
+    margin-top: 80px; /* offset for fixed navbar */
+    min-height: calc(100vh - 160px); /* fill space between navbar and footer */
     animation: pageFadeIn 0.6s ease-out forwards;
 }
 
 .main-content-wrapper .section-padding {
-    padding: 50px 0 80px 0; /* reduced top padding from 100px to solve upper gap issue */
+    padding: 30px 0 60px 0; /* optimized spacing to prevent unnecessary scrolling */
 }
 
 @keyframes pageFadeIn {

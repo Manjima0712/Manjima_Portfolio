@@ -6,220 +6,278 @@
 <section id="projects" class="section-padding bg-darker min-vh-100">
     <div class="container py-5">
         <div class="section-title text-center mb-5" data-aos="fade-up">
-            <span class="subtitle text-cyan text-uppercase tracking-wider">Showcase</span>
-            <h1 class="title fw-bold text-white mt-2">Featured <span class="text-gradient">Projects</span></h1>
+            <span class="subtitle text-cyan text-uppercase tracking-wider">My Portfolio</span>
+            <h1 class="title fw-bold text-white mt-2">Product & Research <span class="text-gradient">Projects</span></h1>
             <div class="title-line mx-auto"></div>
         </div>
 
-        <!-- 1. AI-Based Face Recognition Attendance System (Featured Project) -->
+        <!-- Filter Tab Buttons -->
         <div class="row mb-5" data-aos="fade-up">
-            <div class="col-12">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden animate-glow-border p-3">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 mb-4 mb-lg-0">
-                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="min-height: 300px; background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.2)); display: flex; align-items: center; justify-content: center;">
-                                <i class="fa-solid fa-camera-retro fa-4x text-cyan mb-2"></i>
-                                <span class="position-absolute text-gray small font-space" style="bottom: 15px;">[ AI Attendance screenshot.jpg ]</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 ps-lg-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <span class="badge bg-cyan text-dark fw-bold me-2"><i class="fa-solid fa-star"></i> Featured</span>
-                                <span class="text-gray small font-space">Academic Capstone</span>
-                            </div>
-                            <h3 class="text-white font-space mb-3">AI-Based Face Recognition Attendance System</h3>
-                            <p class="text-gray font-poppins">
-                                An intelligent biometric attendance system designed to automate attendance marking. It captures real-time video, detects faces using MTCNN, and runs classification on facial embeddings to match students against the database. Integrates a secure web interface for administrators.
-                            </p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-cyan-subtle text-cyan font-poppins me-1">Python</span>
-                                <span class="badge bg-cyan-subtle text-cyan font-poppins me-1">OpenCV</span>
-                                <span class="badge bg-cyan-subtle text-cyan font-poppins me-1">TensorFlow</span>
-                                <span class="badge bg-cyan-subtle text-cyan font-poppins me-1">Flask</span>
-                                <span class="badge bg-cyan-subtle text-cyan font-poppins me-1">SQLite</span>
-                            </div>
-                            <div class="d-flex gap-3">
-                                <a href="https://github.com" target="_blank" class="btn btn-primary-gradient px-4 hover-lift"><i class="fa-brands fa-github me-2"></i>GitHub Repo</a>
-                                <a href="#" class="btn btn-outline-cyan px-4 hover-lift"><i class="fa-solid fa-square-rss me-2"></i>Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2 font-space">
+                    <button class="btn btn-outline-cyan active filter-btn px-4" data-filter="all">All Projects</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="ai-ml">AI / ML</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="cv">Computer Vision</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="nlp">NLP</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="web">Web & Full Stack</button>
                 </div>
             </div>
         </div>
 
-        <!-- 2-8 Projects Grid -->
-        <div class="row g-4">
-            <!-- 2. AI-Based Job Fraud Detection System -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-user-shield fa-3x text-purple"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ Job Fraud screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">Job Fraud Detection System</h5>
-                            <p class="text-gray small font-poppins mb-3">Uses NLP and text classification algorithms to analyze job postings, identifying fraudulent recruitment advertisements with high precision.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-purple-subtle text-purple me-1">Python</span>
-                                <span class="badge bg-purple-subtle text-purple me-1">Scikit-learn</span>
-                                <span class="badge bg-purple-subtle text-purple me-1">NLTK</span>
+        <!-- Projects Grid -->
+        <div class="row g-4" id="projects-grid">
+            <!-- 1. AI Face Recognition Attendance (CV) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="cv" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 animate-glow-border p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="{{ url_for('static', filename='images/projects/face_recognition_attendance.jpg') }}" alt="AI Face Recognition Attendance System" class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-cyan text-dark fw-bold me-2"><i class="fa-solid fa-star"></i> Featured</span>
+                                    <span class="text-gray small font-space">Computer Vision</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">AI Face Recognition Attendance</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>90% Recognition Accuracy</div>
+                                <p class="text-gray small font-poppins mb-3">Automated biometric attendance system utilizing YOLOv8 and MTCNN for real-time face detection and face classification embeddings.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">YOLOv8</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">OpenCV</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Django</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Disaster Risk Prediction System -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-cloud-bolt fa-3x text-cyan"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ Disaster Risk screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">Disaster Risk Prediction System</h5>
-                            <p class="text-gray small font-poppins mb-3">A machine learning modeling framework built to analyze geological and meteorological datasets to forecast environmental hazard occurrences.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-cyan-subtle text-cyan me-1">Python</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">XGBoost</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">Pandas</span>
+            <!-- 2. Fake Job Detection (NLP) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="{{ url_for('static', filename='images/projects/fake_job_detection.jpg') }}" alt="Fake Job Detection" class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">NLP & Classifier</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">Fake Job Detection</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>95% Classification F1-Score</div>
+                                <p class="text-gray small font-poppins mb-3">Uses NLP algorithms and text classification models to analyze online job advertisements, automatically detecting fraudulent recruitment schemes.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">Scikit-learn</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">NLTK</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Python</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. AI Resume Analyzer -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-file-invoice fa-3x text-blue"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ Resume Analyzer screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">AI Resume Analyzer</h5>
-                            <p class="text-gray small font-poppins mb-3">Extracts text from uploaded PDF resumes and matches skillset key terms against targeted JD postings using cosine similarity scoring.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-blue-subtle text-blue me-1">Python</span>
-                                <span class="badge bg-blue-subtle text-blue me-1">NLTK</span>
-                                <span class="badge bg-blue-subtle text-blue me-1">Streamlit</span>
+            <!-- 3. Weather & Disaster Risk Prediction (AI/ML) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="ai-ml" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="{{ url_for('static', filename='images/projects/weather_prediction.jpg') }}" alt="Disaster Risk Prediction System" class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Predictive Analytics</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">Weather & Disaster Risk Prediction</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>88% Forecasting Precision</div>
+                                <p class="text-gray small font-poppins mb-3">Built to process and evaluate geological and meteorological datasets, forecasting localized extreme weather hazards and natural disaster warnings.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-blue-subtle text-blue me-1">XGBoost</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Pandas</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Scikit-learn</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 5. CAN Bus Detection System -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(139, 92, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-car-on fa-3x text-cyan"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ CAN Bus screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">CAN Bus Detection System</h5>
-                            <p class="text-gray small font-poppins mb-3">Monitors vehicle network signals to detect adversarial network injections (spoofing attacks) using sequential ML clustering models.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-cyan-subtle text-cyan me-1">Python</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">PySci</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">Machine Learning</span>
+            <!-- 4. ATS Resume Analyzer (NLP) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="{{ url_for('static', filename='images/projects/ats_resume_analyzer.jpg') }}" alt="ATS Resume Analyzer" class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Generative AI Helper</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">ATS Resume Analyzer</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>Real-time Cosine Similarity</div>
+                                <p class="text-gray small font-poppins mb-3">Extracts text from uploaded PDF resumes and evaluates structural relevance score compared to target Job Descriptions.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Streamlit</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">NLTK</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">PyPDF2</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 6. AI Symptom Analysis & Doctor Rec -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(59, 130, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-user-doctor fa-3x text-purple"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ Symptom Analysis screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">AI Symptom Analysis & Doctor Rec</h5>
-                            <p class="text-gray small font-poppins mb-3">An NLP-enabled application allowing users to type symptoms, predict probable diseases, and recommend specialists nearby.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-purple-subtle text-purple me-1">Python</span>
-                                <span class="badge bg-purple-subtle text-purple me-1">Django</span>
-                                <span class="badge bg-purple-subtle text-purple me-1">NLP Model</span>
+            <!-- 5. CAN Bus Intrusion Detection (AI/ML) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="ai-ml" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="{{ url_for('static', filename='images/projects/can_bus_detection.jpg') }}" alt="CAN Bus Intrusion Detection System" class="w-100 h-100 object-fit-cover">
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Cybersecurity ML</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">CAN Bus Intrusion Detection</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>96% Anomalies Detected</div>
+                                <p class="text-gray small font-poppins mb-3">Detects injection frames and spoofing actions in vehicle network signals using sequential clustering models and network logs.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">Python</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Scikit-learn</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Matplotlib</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 7. Student Management System -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(6, 182, 212, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-graduation-cap fa-3x text-blue"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ Student Management screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">Student Management System</h5>
-                            <p class="text-gray small font-poppins mb-3">A clean full-stack portal containing student catalogs, academic grade reports, and responsive database management features.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-blue-subtle text-blue me-1">Python</span>
-                                <span class="badge bg-blue-subtle text-blue me-1">Flask</span>
-                                <span class="badge bg-blue-subtle text-blue me-1">MySQL</span>
+            <!-- 6. AI Symptom Analysis & Doctor Rec (NLP) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden bg-black d-flex align-items-center justify-content-center" style="height: 240px;">
+                                <i class="fa-solid fa-user-doctor fa-4x text-purple opacity-70"></i>
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Medical NLP</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">AI Symptom Analysis & Doctor Rec</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>Multi-label Prediction</div>
+                                <p class="text-gray small font-poppins mb-3">An NLP-enabled application allowing users to input symptoms, predict probable diseases, and recommend specialists nearby.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-blue-subtle text-blue me-1">Python</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Django</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">NLP Model</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 8. TravelMate Holidays Website -->
-            <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-up">
-                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="5">
-                    <div class="project-img-wrapper" style="height: 200px; background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.15)); display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-plane fa-3x text-cyan"></i>
-                        <span class="position-absolute text-gray small font-space" style="bottom: 10px;">[ TravelMate screenshot.jpg ]</span>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between h-100">
-                        <div>
-                            <h5 class="text-white font-space mb-2">TravelMate Holidays Website</h5>
-                            <p class="text-gray small font-poppins mb-3">A responsive, user-friendly travel portal designed with interactive holiday catalogs, search listings, and custom booking requests.</p>
-                            <div class="project-tech mb-4">
-                                <span class="badge bg-cyan-subtle text-cyan me-1">HTML5</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">CSS3</span>
-                                <span class="badge bg-cyan-subtle text-cyan me-1">Bootstrap 5</span>
+            <!-- 7. Student Management System (Web) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="web" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden bg-black d-flex align-items-center justify-content-center" style="height: 240px;">
+                                <i class="fa-solid fa-graduation-cap fa-4x text-blue opacity-70"></i>
                             </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
-                            <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Full Stack Portal</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">Student Management System</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>Relational CRUD Integrations</div>
+                                <p class="text-gray small font-poppins mb-3">A clean full-stack portal containing student catalogs, academic grade reports, and responsive database management features.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Flask</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">MySQL</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Python</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. TravelMate Holidays Website (Web) -->
+            <div class="col-lg-6 col-md-12 project-item" data-category="web" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden bg-black d-flex align-items-center justify-content-center" style="height: 240px;">
+                                <i class="fa-solid fa-plane fa-4x text-cyan opacity-70"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-gray small font-space">Responsive Front-End</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">TravelMate Holidays Website</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>SEO-friendly Catalog</div>
+                                <p class="text-gray small font-poppins mb-3">A responsive, user-friendly travel portal designed with interactive holiday catalogs, search listings, and custom booking requests.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">HTML5</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">CSS3</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Bootstrap 5</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                <a href="#" class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const scrollProgress = document.getElementById('scroll-progress');
     const backToTopBtn = document.getElementById('back-to-top');
+    const floatingResume = document.getElementById('floating-resume');
 
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY;
@@ -136,6 +137,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 backToTopBtn.classList.add('show');
             } else {
                 backToTopBtn.classList.remove('show');
+            }
+        }
+
+        // Floating Resume Button Show/Hide
+        if (floatingResume) {
+            if (scrollTop > 300) {
+                floatingResume.style.display = 'block';
+            } else {
+                floatingResume.style.display = 'none';
             }
         }
     });
@@ -234,6 +244,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (btnText) btnText.classList.remove('opacity-50');
                 if (submitBtn) submitBtn.disabled = false;
             }
+        });
+    }
+
+    // 9. Light/Dark Theme Toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        // Check local storage for theme
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-theme');
+            const icon = themeToggleBtn.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            let theme = 'dark';
+            const icon = themeToggleBtn.querySelector('i');
+            if (document.body.classList.contains('light-theme')) {
+                theme = 'light';
+                if (icon) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                }
+            } else {
+                if (icon) {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            }
+            localStorage.setItem('theme', theme);
+        });
+    }
+
+    // 10. Projects Filter Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    if (filterButtons.length > 0 && projectItems.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to current button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
         });
     }
 });

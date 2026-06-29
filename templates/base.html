@@ -42,14 +42,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="navbar">
         <div class="container">
-            <a class="navbar-brand font-space" href="{{ url_for('home') }}">
-                <span class="text-gradient">Manjima Portfolio.</span>
+            <a class="navbar-brand font-space fw-bold" href="{{ url_for('home') }}">
+                <span class="text-gradient">Manjima S B</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav font-space">
+                <ul class="navbar-nav font-space align-items-center">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{{ url_for('home') }}">Home</a>
                     </li>
@@ -60,13 +60,16 @@
                         <a class="nav-link {% if request.path == '/skills' %}active{% endif %}" href="{{ url_for('skills') }}">Skills</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/experience' %}active{% endif %}" href="{{ url_for('experience') }}">Experience</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link {% if request.path == '/projects' %}active{% endif %}" href="{{ url_for('projects') }}">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/education' %}active{% endif %}" href="{{ url_for('education') }}">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/resume' %}active{% endif %}" href="{{ url_for('resume') }}">Resume & Certificates</a>
+                        <a class="nav-link {% if request.path == '/certifications' %}active{% endif %}" href="{{ url_for('certifications') }}">Certificates</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/contact' %}active{% endif %}" href="{{ url_for('contact') }}">Contact</a>
@@ -89,12 +92,17 @@
 
     <!-- Footer -->
     <footer class="footer py-4 mt-auto border-top border-secondary bg-darker">
-        <div class="container text-center">
-            <p class="text-gray mb-0 font-space small">
-                &copy; 2026 <span class="text-gradient">Manjima S B</span>. Redesigned with premium Glassmorphic AI Theme. All Rights Reserved.
-            </p>
+        <div class="container text-center font-space">
+            <p class="mb-0 text-white">&copy; 2026 <span class="text-gradient fw-bold">Manjima S B</span>. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Floating Resume Button -->
+    <div class="floating-resume" id="floating-resume">
+        <a href="{{ url_for('static', filename='resume/Manjima_Resume.pdf') }}" download class="btn btn-primary-gradient shadow-lg font-space rounded-pill px-4 py-2 hover-lift">
+            <i class="fa-solid fa-file-pdf me-2"></i>Download Resume
+        </a>
+    </div>
 
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>

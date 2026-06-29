@@ -9,12 +9,12 @@
             <!-- Left Side Details -->
             <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
                 <p class="hero-subtitle text-cyan mb-2">Hi, I'm</p>
-                <h1 class="hero-title display-3 fw-bold text-white mb-2 font-space">MANJIMA S B</h1>
+                <h1 class="hero-title display-3 fw-bold text-white mb-2 font-space">Manjima S B</h1>
                 <h2 class="hero-typing h3 text-light mb-4 font-space">
-                    <span class="text-gradient">A Passionate</span> <span id="typed-text"></span>
+                    <span class="text-gradient">AI/ML Engineer | Data Scientist | Python Developer</span>
                 </h2>
                 <p class="hero-desc text-gray mb-4 lead font-poppins">
-                    Electronics & Communication Engineering Graduate specializing in Artificial Intelligence, Machine Learning, Data Science, and Python Development. Passionate about developing intelligent solutions for real-world challenges.
+                    Passionate about building AI-powered applications using Machine Learning, Deep Learning, Computer Vision, and NLP.
                 </p>
                 
                 <!-- Status Badges -->
@@ -32,14 +32,12 @@
                         <span class="interest-badge bg-cyan-subtle">Trivandrum</span>
                         <span class="interest-badge bg-cyan-subtle">Kochi</span>
                         <span class="interest-badge bg-cyan-subtle">Coimbatore</span>
-                        <span class="interest-badge bg-cyan-subtle">Pune</span>
-                        <span class="interest-badge bg-cyan-subtle">Mumbai</span>
                         <span class="interest-badge bg-cyan-subtle">Hyderabad</span>
                     </div>
                 </div>
 
                 <div class="hero-btns">
-                    <a href="{{ url_for('static', filename='resume/Manjima_Resume.pdf') }}" target="_blank" class="btn btn-primary-gradient btn-lg me-3 hover-lift"><i class="fa-solid fa-download me-2"></i>Download Resume</a>
+                    <a href="{{ url_for('static', filename='resume/Manjima_Resume.pdf') }}" download class="btn btn-primary-gradient btn-lg me-3 hover-lift"><i class="fa-solid fa-download me-2"></i>Download Resume</a>
                     <a href="{{ url_for('projects') }}" class="btn btn-outline-cyan btn-lg me-3 hover-lift">View Projects</a>
                     <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg hover-lift">Contact Me</a>
                 </div>
@@ -64,20 +62,49 @@
         <!-- Statistics Counters -->
         <div class="row hero-counters mt-5 py-4 glass-panel rounded-4 text-center g-4" data-aos="fade-up" data-aos-delay="300">
             <div class="col-6 col-md-3">
-                <h3 class="text-cyan font-space fw-bold display-6"><span class="counter" data-target="8">0</span>+</h3>
-                <p class="text-gray mb-0 font-poppins">Projects Developed</p>
+                <h3 class="text-cyan font-space fw-bold display-6"><span class="counter" data-target="3">0</span></h3>
+                <p class="text-gray mb-0 font-poppins">Internships</p>
             </div>
             <div class="col-6 col-md-3">
-                <h3 class="text-purple font-space fw-bold display-6"><span class="counter" data-target="3">0</span></h3>
-                <p class="text-gray mb-0 font-poppins">Internships Completed</p>
+                <h3 class="text-purple font-space fw-bold display-6"><span class="counter" data-target="5">0</span></h3>
+                <p class="text-gray mb-0 font-poppins">Projects</p>
             </div>
             <div class="col-6 col-md-3">
-                <h3 class="text-blue font-space fw-bold display-6"><span class="counter" data-target="85">0</span>%+</h3>
-                <p class="text-gray mb-0 font-poppins">Model Accuracy Achieved</p>
+                <h3 class="text-blue font-space fw-bold display-6"><span class="counter" data-target="15">0</span>+</h3>
+                <p class="text-gray mb-0 font-poppins">Technologies</p>
             </div>
             <div class="col-6 col-md-3">
-                <h3 class="text-white font-space fw-bold display-6">2025</h3>
-                <p class="text-gray mb-0 font-poppins">ECE Graduate</p>
+                <h3 class="text-white font-space fw-bold display-6">8.34</h3>
+                <p class="text-gray mb-0 font-poppins">CGPA</p>
+            </div>
+        </div>
+
+        <!-- Why Hire Me? Section -->
+        <div class="row mt-5 pt-5 text-center" data-aos="fade-up">
+            <div class="col-12 mb-4">
+                <h2 class="text-white font-space fw-bold">Why <span class="text-gradient">Hire Me?</span></h2>
+                <div class="title-line mx-auto"></div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="glass-panel p-4 rounded-4 h-100 hover-lift">
+                    <i class="fa-solid fa-robot fa-2x text-cyan mb-3"></i>
+                    <h5 class="text-white font-space">AI/ML Project Experience</h5>
+                    <p class="text-gray small font-poppins">Hands-on experience deploying predictive classifiers, computer vision networks, and NLP text encoders.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="glass-panel p-4 rounded-4 h-100 hover-lift">
+                    <i class="fa-solid fa-eye fa-2x text-purple mb-3"></i>
+                    <h5 class="text-white font-space">Computer Vision & NLP</h5>
+                    <p class="text-gray small font-poppins">Proficient with YOLOv8, OpenCV, NLTK, spaCy, and RAG architectures for custom retrieval pipelines.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="glass-panel p-4 rounded-4 h-100 hover-lift">
+                    <i class="fa-brands fa-python fa-2x text-blue mb-3"></i>
+                    <h5 class="text-white font-space">Python Full Stack</h5>
+                    <p class="text-gray small font-poppins">Building robust backend integrations using Django, Flask, FastAPI and secure database connections.</p>
+                </div>
             </div>
         </div>
     </div>

@@ -18,17 +18,21 @@ def skills():
 def projects():
     return render_template('projects.html')
 
+@app.route('/experience')
+def experience():
+    return render_template('experience.html')
+
 @app.route('/education')
 def education():
     return render_template('education.html')
 
-@app.route('/resume')
-def resume():
-    return render_template('resume.html')
+@app.route('/certifications')
+def certifications():
+    return render_template('certifications.html')
 
 @app.route('/certificates')
 def certificates():
-    return redirect(url_for('resume'))
+    return redirect(url_for('certifications'))
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
