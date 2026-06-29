@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manjima S B - Data Scientist, AI/ML Engineer, and Python Developer Portfolio">
+    <title>Manjima S B | Technical Skills</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- Mouse Glow Spotlight Effect -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="glow"></div>
+            <span class="text">INITIALIZING SYSTEMS...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="navbar">
+        <div class="container">
+            <a class="navbar-brand font-space fw-bold" href="./index.html">
+                <span class="text-gradient">Manjima S B</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav font-space align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./experience.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./certifications.html">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </nav>
+
+    <!-- Three.js Canvas Background -->
+    <div id="canvas-container"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Main Content Block -->
+    <main class="main-content-wrapper">
+        
+<section id="skills" class="section-padding position-relative min-vh-100 bg-darker">
+    <div class="container position-relative z-index-1 py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h1 class="title fw-bold text-white mt-2">Technical <span class="text-gradient">Skills</span></h1>
+            <div class="title-line mx-auto"></div>
+        </div>
+
+        <div class="row g-4">
+            <!-- 1. Programming Languages -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-cyan-subtle text-cyan p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-code fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Programming Languages</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge"><i class='fa-brands fa-python me-1'></i> Python</span>
+                        <span class="interest-badge"><i class='fa-solid fa-database me-1'></i> SQL</span>
+                        <span class="interest-badge"><i class='fa-brands fa-js me-1'></i> JavaScript</span>
+                        <span class="interest-badge"><i class='fa-solid fa-c me-1'></i> C</span>
+                        <span class="interest-badge"><i class='fa-solid fa-c me-1'></i> C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Python Libraries -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-purple-subtle text-purple p-3 rounded-3 me-3">
+                            <i class="fa-brands fa-python fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Python Libraries</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">Pandas</span>
+                        <span class="interest-badge">NumPy</span>
+                        <span class="interest-badge">Matplotlib</span>
+                        <span class="interest-badge">Seaborn</span>
+                        <span class="interest-badge">Scikit-learn</span>
+                        <span class="interest-badge">NLTK</span>
+                        <span class="interest-badge">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Data Science -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-blue-subtle text-blue p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-chart-line fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Data Science</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">Exploratory Data Analysis (EDA)</span>
+                        <span class="interest-badge">Data Cleaning</span>
+                        <span class="interest-badge">Data Manipulation</span>
+                        <span class="interest-badge">Statistical Analysis</span>
+                        <span class="interest-badge">Data Visualization</span>
+                        <span class="interest-badge">Feature Engineering</span>
+                        <span class="interest-badge">Feature Selection</span>
+                        <span class="interest-badge">ETL</span>
+                        <span class="interest-badge">Data Pipelines</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Machine Learning -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-cyan-subtle text-cyan p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-robot fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Machine Learning</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">Supervised Learning</span>
+                        <span class="interest-badge">Unsupervised Learning</span>
+                        <span class="interest-badge">Classification</span>
+                        <span class="interest-badge">Regression Analysis</span>
+                        <span class="interest-badge">Clustering</span>
+                        <span class="interest-badge">Predictive Modeling</span>
+                        <span class="interest-badge">Ensemble Learning</span>
+                        <span class="interest-badge">Cross Validation</span>
+                        <span class="interest-badge">Hyperparameter Tuning</span>
+                        <span class="interest-badge">Model Evaluation</span>
+                        <span class="interest-badge">Random Forest</span>
+                        <span class="interest-badge">Decision Tree</span>
+                        <span class="interest-badge">XGBoost</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Deep Learning -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-purple-subtle text-purple p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-brain fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Deep Learning</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">TensorFlow</span>
+                        <span class="interest-badge">PyTorch</span>
+                        <span class="interest-badge">Artificial Neural Networks (ANN)</span>
+                        <span class="interest-badge">Convolutional Neural Networks (CNN)</span>
+                        <span class="interest-badge">Recurrent Neural Networks (RNN)</span>
+                        <span class="interest-badge">Reinforcement Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. NLP (Natural Language Processing) -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-blue-subtle text-blue p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-comments fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">NLP</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">Text Classification</span>
+                        <span class="interest-badge">TF-IDF</span>
+                        <span class="interest-badge">NLP</span>
+                        <span class="interest-badge">Prompt Engineering</span>
+                        <span class="interest-badge">Vector Databases</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Front-End Development -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-cyan-subtle text-cyan p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-globe fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Front-End Development</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge"><i class='fa-brands fa-html5 me-1'></i> HTML5</span>
+                        <span class="interest-badge"><i class='fa-brands fa-css3-alt me-1'></i> CSS3</span>
+                        <span class="interest-badge"><i class='fa-brands fa-bootstrap me-1'></i> Bootstrap 5</span>
+                        <span class="interest-badge"><i class='fa-brands fa-js me-1'></i> JavaScript</span>
+                        <span class="interest-badge">Responsive Web Design</span>
+                        <span class="interest-badge">UI Development</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Back-End Development -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-purple-subtle text-purple p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-gears fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Back-End Development</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge"><i class='fa-brands fa-python me-1'></i> Python</span>
+                        <span class="interest-badge"><i class='fa-solid fa-pepper-hot me-1'></i> Flask</span>
+                        <span class="interest-badge"><i class='fa-solid fa-d me-1'></i> Django</span>
+                        <span class="interest-badge"><i class='fa-solid fa-bolt me-1'></i> FastAPI</span>
+                        <span class="interest-badge"><i class='fa-solid fa-network-wired me-1'></i> REST APIs</span>
+                        <span class="interest-badge">MVC Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 10. Tools & Platforms -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-cyan-subtle text-cyan p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-toolbox fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Tools & Platforms</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge"><i class='fa-brands fa-git-alt me-1'></i> Git</span>
+                        <span class="interest-badge"><i class='fa-brands fa-github me-1'></i> GitHub</span>
+                        <span class="interest-badge"><i class='fa-brands fa-docker me-1'></i> Docker</span>
+                        <span class="interest-badge"><i class='fa-solid fa-book me-1'></i> Jupyter Notebook</span>
+                        <span class="interest-badge"><i class='fa-solid fa-code me-1'></i> VS Code</span>
+                        <span class="interest-badge"><i class='fa-solid fa-file-excel me-1'></i> Microsoft Excel</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Software Engineering -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-card-glow glass-panel p-4 rounded-4 h-100" data-tilt data-tilt-max="8" data-tilt-speed="300">
+                    <div class="skill-head d-flex align-items-center mb-4">
+                        <div class="skill-icon bg-purple-subtle text-purple p-3 rounded-3 me-3">
+                            <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white mb-0 font-space" style="font-size: 1.2rem;">Software Engineering</h4>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="interest-badge">Object-Oriented Programming (OOP)</span>
+                        <span class="interest-badge">Software Development Life Cycle (SDLC)</span>
+                        <span class="interest-badge">Debugging</span>
+                        <span class="interest-badge">Version Control</span>
+                        <span class="interest-badge">CI/CD Pipelines</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 mt-auto border-top border-secondary bg-darker">
+        <div class="container text-center font-space">
+            <p class="mb-0 text-white">&copy; 2026 Manjima Portfolio | Developed by Manjima S B | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Resume Button -->
+    <div class="floating-resume" id="floating-resume">
+        <a href="./static/resume/Manjima_Resume.pdf" download class="btn btn-primary-gradient shadow-lg font-space rounded-pill px-4 py-2 hover-lift">
+            <i class="fa-solid fa-file-pdf me-2"></i>Download Resume
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Three.js Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for Micro-animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js Core -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Vanilla Tilt for 3D card tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Shared ThreeJS neural background script -->
+    <script src="./static/js/three-bg.js"></script>
+    
+    <!-- Shared main logic script -->
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>

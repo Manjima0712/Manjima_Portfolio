@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manjima S B - Data Scientist, AI/ML Engineer, and Python Developer Portfolio">
+    <title>Manjima S B | About Me</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- Mouse Glow Spotlight Effect -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="glow"></div>
+            <span class="text">INITIALIZING SYSTEMS...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="navbar">
+        <div class="container">
+            <a class="navbar-brand font-space fw-bold" href="./index.html">
+                <span class="text-gradient">Manjima S B</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav font-space align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./experience.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./certifications.html">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </nav>
+
+    <!-- Three.js Canvas Background -->
+    <div id="canvas-container"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Main Content Block -->
+    <main class="main-content-wrapper">
+        
+<section id="about" class="section-padding bg-darker">
+  <div class="container py-5">
+    <!-- Section Header -->
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <span class="subtitle text-cyan text-uppercase tracking-wider">Discover</span>
+      <h1 class="title fw-bold text-white mt-2">About <span class="text-gradient">Me</span></h1>
+      <div class="title-line mx-auto"></div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left Column: Photo & Professional Details Card -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <!-- Photo Card -->
+        <div class="glass-panel p-4 text-center mb-4">
+          <div class="about-image-wrapper p-2 rounded-4 glass-panel text-center mb-4">
+            <img src="./static/images/profile.jpg" alt="Manjima S B" class="img-fluid rounded-4 shadow-lg mb-3" style="max-height: 300px; width: 100%; object-fit: cover;">
+          </div>
+          <h4 class="text-white font-space mb-1">MANJIMA S B</h4>
+          <p class="text-cyan small mb-3">AI/ML Engineer & Data Scientist</p>
+          <div class="d-grid gap-2">
+            <a href="./static/resume/Manjima_Resume.pdf" class="btn btn-primary-gradient px-4 py-2 hover-lift" download>
+              <i class="fa-solid fa-download me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Professional Details Info Card -->
+        <div class="glass-panel p-4 rounded-4 mb-4 font-poppins text-white">
+          <h5 class="text-gradient font-space mb-4"><i class="fa-solid fa-id-card me-2"></i>Professional Details</h5>
+          <div class="table-responsive">
+            <table class="table table-borderless text-white mb-0 align-middle" style="font-size: 0.95rem;">
+              <tbody>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Name</td>
+                  <td class="text-gray py-2">Manjima S B</td>
+                </tr>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Degree</td>
+                  <td class="text-gray py-2">B.E. Electronics & Communication Engineering</td>
+                </tr>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Graduation</td>
+                  <td class="text-gray py-2">2025</td>
+                </tr>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Current Location</td>
+                  <td class="text-gray py-2"><i class="fa-solid fa-location-dot me-1 text-success"></i> Bengaluru, Karnataka</td>
+                </tr>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Home Town</td>
+                  <td class="text-gray py-2">Thuckalay, Nagercoil, Kanyakumari, Tamil Nadu</td>
+                </tr>
+                <tr class="border-bottom border-secondary-subtle">
+                  <td class="text-cyan fw-bold py-2 font-space">Availability</td>
+                  <td class="text-gray py-2"><span class="badge bg-success font-space">Immediate Joiner</span></td>
+                </tr>
+                <tr>
+                  <td class="text-cyan fw-bold py-2 font-space">Relocation</td>
+                  <td class="text-gray py-2">Open to Chennai, Bengaluru, Kochi, Trivandrum, Coimbatore, Pune, Mumbai & Hyderabad</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Paragraphs, Objectives, Strengths, Skills & Interests -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <!-- About Paragraphs -->
+        <div class="glass-panel p-4 rounded-4 mb-4">
+          <h4 class="text-white mb-3 font-space"><i class="fa-solid fa-user-tie text-cyan me-2"></i>Profile Summary</h4>
+          <p class="text-gray mb-3 font-poppins" style="line-height: 1.7;">
+            I am Manjima S B, a recent Electronics and Communication Engineering graduate (2025) with internship experience in Data Science, Artificial Intelligence, Machine Learning, and Python Full Stack Development. I am passionate about developing AI-powered applications that solve real-world problems through intelligent automation and data-driven decision-making.
+          </p>
+          <p class="text-gray mb-3 font-poppins" style="line-height: 1.7;">
+            During my internships at Agileinfo Techytern Solutions LLP, I worked on projects involving Machine Learning, Natural Language Processing (NLP), Computer Vision, Predictive Analytics, and Full Stack Development, gaining hands-on experience with Python, Flask, Django, Scikit-learn, TensorFlow, OpenCV, and modern AI technologies.
+          </p>
+          <p class="text-gray mb-0 font-poppins" style="line-height: 1.7;">
+            I enjoy learning emerging technologies, solving challenging problems, and building innovative solutions that create meaningful impact.
+          </p>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="glass-panel p-4 rounded-4 mb-4">
+          <h4 class="text-white mb-3 font-space"><i class="fa-solid fa-bullseye text-cyan me-2"></i>Career Objective</h4>
+          <p class="text-gray mb-0 font-poppins" style="line-height: 1.7;">
+            To begin my professional career as an AI/ML Engineer, Data Scientist, Python Developer, or Software Engineer, where I can apply my technical knowledge, contribute to innovative projects, and continuously grow by learning new technologies while delivering intelligent, scalable, and high-quality software solutions.
+          </p>
+        </div>
+
+        <!-- Core Strengths & Soft Skills Row -->
+        <div class="row g-4 mb-4">
+          <!-- Core Strengths -->
+          <div class="col-md-6">
+            <div class="glass-panel p-4 rounded-4 h-100 font-poppins text-white">
+              <h5 class="text-gradient font-space mb-3"><i class="fa-solid fa-brain me-2"></i>Core Strengths</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0" style="font-size: 0.95rem;">
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>Machine Learning & Modeling</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>Deep Learning Fundamentals</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>Data Science & Analytics</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>NLP (Natural Language Processing)</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>Front-End Development</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>Back-End Development</li>
+                <li><i class="fa-solid fa-circle-check text-cyan me-2"></i>REST API Development</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="col-md-6">
+            <div class="glass-panel p-4 rounded-4 h-100 font-poppins text-white">
+              <h5 class="text-gradient font-space mb-3"><i class="fa-solid fa-comments me-2"></i>Soft Skills</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0" style="font-size: 0.95rem;">
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Problem Solving</li>
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Continuous Learning</li>
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Communication</li>
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Time Management</li>
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Team Collaboration</li>
+                <li><i class="fa-solid fa-circle-check text-purple me-2"></i>Adaptability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Interests -->
+        <div class="glass-panel p-4 rounded-4 mb-4">
+          <h5 class="text-gradient font-space mb-3"><i class="fa-solid fa-briefcase me-2"></i>Career Interests</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">AI/ML Engineer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">Data Scientist</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">Python Developer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">AI Developer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">Machine Learning Engineer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">Software Engineer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">Full Stack Developer</span>
+            <span class="interest-badge bg-cyan-subtle text-cyan px-3 py-1 rounded-pill small">AI Generalist</span>
+          </div>
+        </div>
+
+        <!-- Technologies I Enjoy Working With -->
+        <div class="glass-panel p-4 rounded-4">
+          <h5 class="text-gradient font-space mb-3"><i class="fa-solid fa-microchip me-2"></i>Technologies I Enjoy Working With</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Python</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Machine Learning</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Deep Learning</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">NLP</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Computer Vision</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Flask</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Django</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">TensorFlow</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">PyTorch</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">SQL</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Git</span>
+            <span class="interest-badge bg-purple-subtle text-purple px-3 py-1 rounded-pill small">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 mt-auto border-top border-secondary bg-darker">
+        <div class="container text-center font-space">
+            <p class="mb-0 text-white">&copy; 2026 Manjima Portfolio | Developed by Manjima S B | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Resume Button -->
+    <div class="floating-resume" id="floating-resume">
+        <a href="./static/resume/Manjima_Resume.pdf" download class="btn btn-primary-gradient shadow-lg font-space rounded-pill px-4 py-2 hover-lift">
+            <i class="fa-solid fa-file-pdf me-2"></i>Download Resume
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Three.js Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for Micro-animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js Core -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Vanilla Tilt for 3D card tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Shared ThreeJS neural background script -->
+    <script src="./static/js/three-bg.js"></script>
+    
+    <!-- Shared main logic script -->
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>

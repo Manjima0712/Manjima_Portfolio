@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manjima S B - Data Scientist, AI/ML Engineer, and Python Developer Portfolio">
+    <title>Manjima S B | Projects</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    
+</head>
+<body class="dark-theme">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- Mouse Glow Spotlight Effect -->
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="glow"></div>
+            <span class="text">INITIALIZING SYSTEMS...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="navbar">
+        <div class="container">
+            <a class="navbar-brand font-space fw-bold" href="./index.html">
+                <span class="text-gradient">Manjima S B</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav font-space align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./experience.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./certifications.html">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </nav>
+
+    <!-- Three.js Canvas Background -->
+    <div id="canvas-container"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Main Content Block -->
+    <main class="main-content-wrapper">
+        
+<section id="projects" class="section-padding bg-darker min-vh-100">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <span class="subtitle text-cyan text-uppercase tracking-wider">My Portfolio</span>
+            <h1 class="title fw-bold text-white mt-2">Product & Research <span class="text-gradient">Projects</span></h1>
+            <div class="title-line mx-auto"></div>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2 font-space">
+                    <button class="btn btn-outline-cyan active filter-btn px-4" data-filter="all">All Projects</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="ai-ml">AI / ML</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="cv">Computer Vision</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="nlp">NLP</button>
+                    <button class="btn btn-outline-cyan filter-btn px-4" data-filter="web">Web & Full Stack</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row g-4" id="projects-grid">
+            <!-- 1. AI-Based Face Recognition Attendance System (CV) - FEATURED (Full Width) -->
+            <div class="col-12 project-item animate-glow-border" data-category="cv" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 320px;">
+                                <img src="./static/assets/images/face_recogintion.jpg" alt="AI-Based Face Recognition Attendance System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-between text-start ps-lg-4">
+                            <div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="badge bg-cyan text-dark fw-bold me-2 px-3 py-2"><i class="fa-solid fa-star me-1"></i> Featured Project</span>
+                                    <span class="text-cyan small font-space fw-semibold">Computer Vision</span>
+                                </div>
+                                <h3 class="text-white font-space mb-3">AI-Based Face Recognition Attendance System</h3>
+                                <div class="text-gradient font-space fw-bold mb-3" style="font-size: 1.1rem;">
+                                    <i class="fa-solid fa-square-check me-2"></i>90% Recognition Accuracy
+                                </div>
+                                <p class="text-gray font-poppins mb-4" style="font-size: 1.05rem; line-height: 1.6;">
+                                    An automated, real-time biometric attendance system utilizing deep learning. It integrates YOLOv8 for face detection and MTCNN along with FaceNet embeddings for precise identification. The system records log status dynamically to a Django-based administrative backend dashboard, streamlining institutional attendance processes.
+                                </p>
+                                <div class="project-tech mb-4">
+                                    <span class="badge bg-cyan-subtle text-cyan px-3 py-2 rounded-pill me-2">YOLOv8</span>
+                                    <span class="badge bg-cyan-subtle text-cyan px-3 py-2 rounded-pill me-2">FaceNet</span>
+                                    <span class="badge bg-cyan-subtle text-cyan px-3 py-2 rounded-pill me-2">OpenCV</span>
+                                    <span class="badge bg-cyan-subtle text-cyan px-3 py-2 rounded-pill me-2">Django</span>
+                                    <span class="badge bg-cyan-subtle text-cyan px-3 py-2 rounded-pill me-2">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-github me-2"></i>GitHub Code</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. AI-Based Job Fraud Detection System (NLP) -->
+            <div class="col-lg-6 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/Job_detection.png" alt="AI-Based Job Fraud Detection System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">NLP & Classifier</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">AI-Based Job Fraud Detection System</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>95% Classification F1-Score</div>
+                                <p class="text-gray small font-poppins mb-3">Uses NLP algorithms and text classification models to analyze online job advertisements, automatically detecting fraudulent recruitment schemes.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">Scikit-learn</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">NLTK</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Python</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Machine Learning-Based Disaster Risk Prediction System (AI/ML) -->
+            <div class="col-lg-6 project-item" data-category="ai-ml" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/Weather_predicition.png" alt="Machine Learning-Based Disaster Risk Prediction System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">Predictive Analytics</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">Machine Learning-Based Disaster Risk Prediction System</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>88% Forecasting Precision</div>
+                                <p class="text-gray small font-poppins mb-3">Built to process and evaluate geological and meteorological datasets, forecasting localized extreme weather hazards and natural disaster warnings.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-blue-subtle text-blue me-1">XGBoost</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Pandas</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Scikit-learn</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. CAN Bus Detection System (AI/ML) -->
+            <div class="col-lg-6 project-item" data-category="ai-ml" data-aos="fade-up">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/can_bus.png" alt="CAN Bus Detection System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">Cybersecurity ML</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">CAN Bus Detection System</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>96% Anomalies Detected</div>
+                                <p class="text-gray small font-poppins mb-3">Detects injection frames and spoofing actions in vehicle network signals using sequential clustering models and network logs.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">Python</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Scikit-learn</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Matplotlib</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. AI Resume Analyzer for Job Description Matching (NLP) -->
+            <div class="col-lg-6 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/images/projects/ats_resume_analyzer.jpg" alt="AI Resume Analyzer for Job Description Matching" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">NLP & Matching</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">AI Resume Analyzer</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>ATS Score Calculation</div>
+                                <p class="text-gray small font-poppins mb-3">Developed an AI-powered resume screening and job matching system that analyzes resumes using Natural Language Processing (NLP). The application automatically calculates ATS scores, extracts technical skills, ranks multiple resumes based on job descriptions, and improves recruitment efficiency through intelligent text similarity analysis.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-blue-subtle text-blue me-1">Python</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">NLP</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Scikit-learn</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">Machine Learning</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. AI-Based Symptom Analysis & Doctor Recommendation System (NLP) -->
+            <div class="col-lg-6 project-item" data-category="nlp" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/doctor_management.jpg" alt="AI-Based Symptom Analysis & Doctor Recommendation System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">Medical NLP</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">AI-Based Symptom Analysis & Doctor Recommendation</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>Multi-label Prediction</div>
+                                <p class="text-gray small font-poppins mb-3">An NLP-enabled application allowing users to input symptoms, predict probable diseases, and recommend specialists nearby.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Python</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">Django</span>
+                                    <span class="badge bg-cyan-subtle text-cyan me-1">NLP Model</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. TravelMate Holidays Website (Web) -->
+            <div class="col-lg-6 project-item" data-category="web" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/Travel_mate.png" alt="TravelMate Holidays Website" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">Responsive UI</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">TravelMate Holidays Website</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>API Integration</div>
+                                <p class="text-gray small font-poppins mb-3">Designed and developed a responsive travel planning website that enables users to explore travel destinations and holiday packages through an interactive and user-friendly interface. Integrated external APIs to provide dynamic content while ensuring a seamless experience across desktop, tablet, and mobile devices.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-purple-subtle text-purple me-1">HTML5</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">CSS3</span>
+                                    <span class="badge bg-purple-subtle text-purple me-1">Bootstrap 5</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Student Management System (Web) -->
+            <div class="col-lg-6 project-item" data-category="web" data-aos="fade-up" data-aos-delay="50">
+                <div class="project-card-glow glass-panel rounded-4 overflow-hidden h-100 p-3">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="project-img-wrapper rounded-3 overflow-hidden" style="height: 240px;">
+                                <img src="./static/assets/images/student_management.jpg" alt="Student Management System" class="w-100 h-100 object-fit-cover hover-scale">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between h-100 text-start">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="text-cyan small font-space fw-semibold">Responsive Web App</span>
+                                </div>
+                                <h4 class="text-white font-space mb-2">Student Management System</h4>
+                                <div class="text-gradient font-space fw-bold small mb-2"><i class="fa-solid fa-square-check me-2"></i>Responsive Dashboard</div>
+                                <p class="text-gray small font-poppins mb-3">A clean dashboard interface with student catalogs, academic grade reports, and responsive database management features.</p>
+                                <div class="project-tech mb-3">
+                                    <span class="badge bg-blue-subtle text-blue me-1">PHP</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">MySQL</span>
+                                    <span class="badge bg-blue-subtle text-blue me-1">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Manjima0712" target="_blank" class="btn btn-outline-light btn-sm w-100"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 mt-auto border-top border-secondary bg-darker">
+        <div class="container text-center font-space">
+            <p class="mb-0 text-white">&copy; 2026 Manjima Portfolio | Developed by Manjima S B | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Resume Button -->
+    <div class="floating-resume" id="floating-resume">
+        <a href="./static/resume/Manjima_Resume.pdf" download class="btn btn-primary-gradient shadow-lg font-space rounded-pill px-4 py-2 hover-lift">
+            <i class="fa-solid fa-file-pdf me-2"></i>Download Resume
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Three.js Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for Micro-animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- AOS Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js Core -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- Vanilla Tilt for 3D card tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <!-- Shared ThreeJS neural background script -->
+    <script src="./static/js/three-bg.js"></script>
+    
+    <!-- Shared main logic script -->
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>
