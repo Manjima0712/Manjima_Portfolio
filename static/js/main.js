@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 8. Contact Form Handling (AJAX)
+    // 8. Contact Form Handling (EmailJS)
     const contactForm = document.getElementById('contactForm');
     const formAlert = document.getElementById('formAlert');
 
@@ -203,41 +203,35 @@ document.addEventListener('DOMContentLoaded', () => {
             const spinner = document.getElementById('btnSpinner');
             const btnText = document.getElementById('btnText');
 
+            // TODO: Replace these placeholders with your actual EmailJS IDs
+            const serviceId = "YOUR_SERVICE_ID";
+            const templateId = "YOUR_TEMPLATE_ID";
+
+            if (serviceId === "YOUR_SERVICE_ID" || templateId === "YOUR_TEMPLATE_ID") {
+                formAlert.classList.remove('d-none', 'alert-success');
+                formAlert.classList.add('alert-danger');
+                formAlert.innerText = 'Please configure your EmailJS Service ID and Template ID in static/js/main.js.';
+                return;
+            }
+
             // Show loading spinner
             if (spinner) spinner.classList.remove('d-none');
             if (btnText) btnText.classList.add('opacity-50');
             if (submitBtn) submitBtn.disabled = true;
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
             try {
-                const response = await fetch('/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ name, email, subject, message })
-                });
-
-                const data = await response.json();
+                // Send form directly to EmailJS using sendForm API
+                await emailjs.sendForm(serviceId, templateId, contactForm);
                 
                 formAlert.classList.remove('d-none', 'alert-danger', 'alert-success');
-                
-                if (response.ok && data.success) {
-                    formAlert.classList.add('alert-success');
-                    formAlert.innerText = data.message;
-                    contactForm.reset();
-                } else {
-                    formAlert.classList.add('alert-danger');
-                    formAlert.innerText = data.message || 'Validation error occurred.';
-                }
+                formAlert.classList.add('alert-success');
+                formAlert.innerText = 'Thank you! Your message has been sent successfully.';
+                contactForm.reset();
             } catch (error) {
+                console.error("EmailJS Error:", error);
                 formAlert.classList.remove('d-none', 'alert-success');
                 formAlert.classList.add('alert-danger');
-                formAlert.innerText = 'Unable to send message. Please check your internet connection and try again.';
+                formAlert.innerText = 'An error occurred while sending your message. Please try again.';
             } finally {
                 // Reset button state
                 if (spinner) spinner.classList.add('d-none');
