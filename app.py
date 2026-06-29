@@ -26,6 +26,7 @@ def experience():
 def education():
     return render_template('education.html')
 
+
 @app.route('/certifications')
 def certifications():
     return render_template('certifications.html')

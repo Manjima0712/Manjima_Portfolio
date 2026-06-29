@@ -4,16 +4,26 @@
     --bg-secondary: #1E293B;
     --color-cyan: #06B6D4;
     --color-purple: #8B5CF6;
-    --color-blue: #2563EB;
-    --color-primary: #2563EB;
+    --color-blue: #3B82F6;
+    --color-primary: #3B82F6;
     --color-secondary: #06B6D4;
     --text-white: #F8FAFC;
+    --text-body: #CBD5E1;
     --text-gray: #94A3B8;
     --font-primary: 'Poppins', sans-serif;
-    --font-space: 'Space Grotesk', sans-serif;
-    --glass-bg: rgba(30, 41, 59, 0.65);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: rgba(0, 0, 0, 0.3);
+    --font-space: 'Poppins', sans-serif;
+    --glass-bg: rgba(30, 41, 59, 0.8);
+    --glass-border: #334155;
+    --glass-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* Global Border Radius Overrides */
+.glass-panel, .project-card-glow, .skill-card-glow, .cert-card-glow, .achievement-card {
+    border-radius: 16px !important;
+}
+
+.btn {
+    border-radius: 12px !important;
 }
 
 /* Highlighted Resume Nav Button */
@@ -75,7 +85,7 @@ html {
 
 body {
     background-color: var(--bg-primary);
-    color: var(--text-white);
+    color: var(--text-body);
     font-family: var(--font-primary);
     overflow-x: hidden;
     line-height: 1.6;

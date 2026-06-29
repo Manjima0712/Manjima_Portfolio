@@ -57,13 +57,13 @@
                         <a class="nav-link {% if request.path == '/about' %}active{% endif %}" href="{{ url_for('about') }}">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/projects' %}active{% endif %}" href="{{ url_for('projects') }}">Projects</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link {% if request.path == '/skills' %}active{% endif %}" href="{{ url_for('skills') }}">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/experience' %}active{% endif %}" href="{{ url_for('experience') }}">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/projects' %}active{% endif %}" href="{{ url_for('projects') }}">Projects</a>
+                        <a class="nav-link {% if request.path == '/experience' %}active{% endif %}" href="{{ url_for('experience') }}">Internship</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == '/education' %}active{% endif %}" href="{{ url_for('education') }}">Education</a>
@@ -93,7 +93,7 @@
     <!-- Footer -->
     <footer class="footer py-4 mt-auto border-top border-secondary bg-darker">
         <div class="container text-center font-space">
-            <p class="mb-0 text-white">&copy; 2026 <span class="text-gradient fw-bold">Manjima S B</span>. All Rights Reserved.</p>
+            <p class="mb-0 text-white">&copy; 2026 Manjima Portfolio | Designed & Developed by Manjima S B | All Rights Reserved.</p>
         </div>
     </footer>
 

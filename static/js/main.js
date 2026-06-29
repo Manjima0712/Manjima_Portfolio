@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedTextEl = document.getElementById('typed-text');
     if (typedTextEl) {
         new Typed('#typed-text', {
-            strings: ['Data Scientist', 'AI/ML Engineer', 'Python Developer'],
+            strings: ['Data Scientist', 'AI/ML Engineer', 'Software Engineer', 'Full Stack Developer', 'Python Developer', 'AI Enthusiast'],
             typeSpeed: 60,
             backSpeed: 40,
             backDelay: 2000,
@@ -247,39 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 9. Light/Dark Theme Toggle
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    if (themeToggleBtn) {
-        // Check local storage for theme
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme === 'light') {
-            document.body.classList.add('light-theme');
-            const icon = themeToggleBtn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            }
-        }
 
-        themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('light-theme');
-            let theme = 'dark';
-            const icon = themeToggleBtn.querySelector('i');
-            if (document.body.classList.contains('light-theme')) {
-                theme = 'light';
-                if (icon) {
-                    icon.classList.remove('fa-moon');
-                    icon.classList.add('fa-sun');
-                }
-            } else {
-                if (icon) {
-                    icon.classList.remove('fa-sun');
-                    icon.classList.add('fa-moon');
-                }
-            }
-            localStorage.setItem('theme', theme);
-        });
-    }
 
     // 10. Projects Filter Logic
     const filterButtons = document.querySelectorAll('.filter-btn');
