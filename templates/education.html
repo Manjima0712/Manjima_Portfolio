@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block title %}Manjima S B | Journey & Education{% endblock %}
+
+{% block content %}
+<section id="education" class="section-padding bg-darker min-vh-100">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <span class="subtitle text-cyan text-uppercase tracking-wider">Timeline</span>
+            <h1 class="title fw-bold text-white mt-2">My Journey & <span class="text-gradient">Education</span></h1>
+            <div class="title-line mx-auto"></div>
+        </div>
+
+        <div class="timeline">
+            <!-- 1. Seeking Full-Time Opportunity (Job Search) -->
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-dot bg-cyan"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4 animate-glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Seeking Full-Time Opportunity</h4>
+                        <span class="badge bg-cyan text-dark fw-bold">Current Status</span>
+                    </div>
+                    <h6 class="text-cyan small mb-2"><i class="fa-solid fa-magnifying-glass me-1"></i>Active Job Search</h6>
+                    <p class="text-gray small font-poppins mb-0">
+                        Graduated in 2025. Actively applying for entry-level roles as an **AI/ML Engineer, Data Scientist, Python Developer, or Full Stack Developer**. Open to relocate immediately.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. Data Science & AI Intern -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+                <div class="timeline-dot bg-purple"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Data Science & AI Intern</h4>
+                        <span class="badge bg-purple text-white fw-bold">Apr 2025 – Mar 2026</span>
+                    </div>
+                    <h6 class="text-purple small mb-2"><i class="fa-solid fa-briefcase me-1"></i>Agileinfo Techytern Solutions LLP</h6>
+                    <p class="text-gray small font-poppins mb-0">
+                        Developed and optimized Machine Learning models (Random Forest, XGBoost) to achieve over 85% accuracy. Managed ETL data pipelines and preprocessed large datasets (5000+ records).
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. Bachelor of Engineering -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot bg-blue"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Bachelor of Engineering – ECE</h4>
+                        <span class="badge bg-blue text-white fw-bold">2021 – 2025</span>
+                    </div>
+                    <h6 class="text-blue small mb-2"><i class="fa-solid fa-building-columns me-1"></i>Ponjesly College of Engineering, Nagercoil</h6>
+                    <p class="text-gray small font-poppins mb-3">Specialization: Electronics and Communication Engineering. Aggregate CGPA: 8.34/10.</p>
+                    
+                    <div class="d-flex gap-2" style="max-width: 320px;">
+                        <a href="{{ url_for('static', filename='images/marksheets/UG-Marksheet.pdf') }}" target="_blank" class="btn btn-outline-light btn-sm w-100">View UG Marksheet</a>
+                        <a href="{{ url_for('static', filename='images/marksheets/UG-Marksheet.pdf') }}" download class="btn btn-primary-gradient btn-sm w-100">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Python Full Stack Developer Intern -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="timeline-dot bg-cyan"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Python Full Stack Developer Intern</h4>
+                        <span class="badge bg-cyan text-dark fw-bold">Nov 2024 – Mar 2025</span>
+                    </div>
+                    <h6 class="text-cyan small mb-2"><i class="fa-solid fa-briefcase me-1"></i>Agileinfo Techytern Solutions LLP</h6>
+                    <p class="text-gray small font-poppins mb-0">
+                        Built and deployed responsive full-stack web applications using Django, Flask, Bootstrap, and SQLite. Integrated REST APIs and optimized CRUD queries.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 5. Embedded & IoT System Intern -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot bg-purple"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Embedded & IoT System Intern</h4>
+                        <span class="badge bg-purple text-white fw-bold">July 2024</span>
+                    </div>
+                    <h6 class="text-purple small mb-2"><i class="fa-solid fa-briefcase me-1"></i>Srishti Innovative Pvt Ltd</h6>
+                    <p class="text-gray small font-poppins mb-0">
+                        Developed embedded IoT prototypes using Arduino Uno and sensors. Completed system testing and debugging to reduce operational errors.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 6. Higher Secondary School (HSC / 11th & 12th) -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="timeline-dot bg-blue"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Higher Secondary School (HSC)</h4>
+                        <span class="badge bg-blue text-white fw-bold">Completed 2021</span>
+                    </div>
+                    <h6 class="text-blue small mb-2"><i class="fa-solid fa-school me-1"></i>State Board High School</h6>
+                    <p class="text-gray small font-poppins mb-3">Focused on physics, chemistry, mathematics, and computer sciences.</p>
+                    
+                    <div class="d-flex flex-column gap-2 mb-2" style="max-width: 320px;">
+                        <div class="d-flex gap-2">
+                            <a href="{{ url_for('static', filename='images/marksheets/12_marksheet.pdf') }}" target="_blank" class="btn btn-outline-light btn-sm w-100">View 12th Marksheet</a>
+                            <a href="{{ url_for('static', filename='images/marksheets/12_marksheet.pdf') }}" download class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="{{ url_for('static', filename='images/marksheets/11th_marksheet.pdf') }}" target="_blank" class="btn btn-outline-light btn-sm w-100">View 11th Marksheet</a>
+                            <a href="{{ url_for('static', filename='images/marksheets/11th_marksheet.pdf') }}" download class="btn btn-primary-gradient btn-sm w-100"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. SSLC -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-dot bg-cyan"></div>
+                <div class="timeline-content glass-panel p-4 rounded-4" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb-2">
+                        <h4 class="text-white font-space mb-0">Secondary School Leaving Certificate (SSLC)</h4>
+                        <span class="badge bg-cyan text-dark fw-bold">Completed 2019</span>
+                    </div>
+                    <h6 class="text-cyan small mb-2"><i class="fa-solid fa-school me-1"></i>Secondary High School</h6>
+                    <p class="text-gray small font-poppins mb-3">General matriculation studies.</p>
+                    
+                    <div class="d-flex gap-2" style="max-width: 320px;">
+                        <a href="{{ url_for('static', filename='images/marksheets/10_marksheet.pdf') }}" target="_blank" class="btn btn-outline-light btn-sm w-100">View 10th Marksheet</a>
+                        <a href="{{ url_for('static', filename='images/marksheets/10_marksheet.pdf') }}" download class="btn btn-primary-gradient btn-sm w-100">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}Manjima S B | Home{% endblock %}
+
+{% block content %}
+<section id="home" class="hero-section d-flex align-items-center">
+    <div class="container py-5">
+        <div class="row align-items-center min-vh-100">
+            <!-- Left Side Details -->
+            <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+                <p class="hero-subtitle text-cyan mb-2">Hi, I'm</p>
+                <h1 class="hero-title display-3 fw-bold text-white mb-2 font-space">MANJIMA S B</h1>
+                <h2 class="hero-typing h3 text-light mb-4 font-space">
+                    <span class="text-gradient">A Passionate</span> <span id="typed-text"></span>
+                </h2>
+                <p class="hero-desc text-gray mb-4 lead font-poppins">
+                    Electronics & Communication Engineering Graduate specializing in Artificial Intelligence, Machine Learning, Data Science, and Python Development. Passionate about developing intelligent solutions for real-world challenges.
+                </p>
+                
+                <!-- Status Badges -->
+                <div class="status-badges d-flex flex-wrap gap-2 mb-4">
+                    <span class="status-badge"><i class="fa-solid fa-circle-check text-success"></i> Availability: Immediate Joiner</span>
+                    <span class="status-badge"><i class="fa-solid fa-location-dot text-cyan"></i> Current Location: Bengaluru</span>
+                </div>
+                
+                <!-- Relocate Badge / Target Locations -->
+                <div class="glass-panel p-3 rounded-4 mb-4 font-poppins text-start">
+                    <h6 class="text-gradient font-space mb-2"><i class="fa-solid fa-plane-departure me-2"></i>Open to Relocate</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="interest-badge bg-cyan-subtle">Bengaluru</span>
+                        <span class="interest-badge bg-cyan-subtle">Chennai</span>
+                        <span class="interest-badge bg-cyan-subtle">Trivandrum</span>
+                        <span class="interest-badge bg-cyan-subtle">Kochi</span>
+                        <span class="interest-badge bg-cyan-subtle">Coimbatore</span>
+                        <span class="interest-badge bg-cyan-subtle">Pune</span>
+                        <span class="interest-badge bg-cyan-subtle">Mumbai</span>
+                        <span class="interest-badge bg-cyan-subtle">Hyderabad</span>
+                    </div>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="{{ url_for('static', filename='resume/Manjima_Resume.pdf') }}" target="_blank" class="btn btn-primary-gradient btn-lg me-3 hover-lift"><i class="fa-solid fa-download me-2"></i>Download Resume</a>
+                    <a href="{{ url_for('projects') }}" class="btn btn-outline-cyan btn-lg me-3 hover-lift">View Projects</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg hover-lift">Contact Me</a>
+                </div>
+                <div class="social-links mt-5">
+                    <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:manjimasb07@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <!-- Right Side Profile Photo -->
+            <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.5">
+                    <div class="hero-image-inner">
+                        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Manjima S B" class="img-fluid rounded-4 shadow-lg profile-img">
+                        <div class="floating-badge badge-1"><i class="fa-brands fa-python text-warning"></i> Python</div>
+                        <div class="floating-badge badge-2"><i class="fa-solid fa-brain text-purple"></i> AI/ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistics Counters -->
+        <div class="row hero-counters mt-5 py-4 glass-panel rounded-4 text-center g-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-6 col-md-3">
+                <h3 class="text-cyan font-space fw-bold display-6"><span class="counter" data-target="8">0</span>+</h3>
+                <p class="text-gray mb-0 font-poppins">Projects Developed</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="text-purple font-space fw-bold display-6"><span class="counter" data-target="3">0</span></h3>
+                <p class="text-gray mb-0 font-poppins">Internships Completed</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="text-blue font-space fw-bold display-6"><span class="counter" data-target="85">0</span>%+</h3>
+                <p class="text-gray mb-0 font-poppins">Model Accuracy Achieved</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="text-white font-space fw-bold display-6">2025</h3>
+                <p class="text-gray mb-0 font-poppins">ECE Graduate</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

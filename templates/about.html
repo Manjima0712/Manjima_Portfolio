@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block title %}Manjima S B | About Me{% endblock %}
+
+{% block content %}
+<section id="about" class="section-padding bg-darker min-vh-100">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <span class="subtitle text-cyan text-uppercase tracking-wider">Discover</span>
+            <h1 class="title fw-bold text-white mt-2">About <span class="text-gradient">Me</span></h1>
+            <div class="title-line mx-auto"></div>
+        </div>
+        
+        <div class="row align-items-center mb-5">
+            <!-- Left Side Image and Interests -->
+            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="about-image-wrapper p-2 rounded-4 glass-panel text-center mb-4">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Manjima S B" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                
+                <!-- Career Interests -->
+                <div class="about-info-box glass-panel p-4 rounded-4 text-start" data-aos="fade-up">
+                    <h5 class="text-gradient font-space mb-3"><i class="fa-solid fa-compass me-2"></i>Career Interests</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="interest-badge">AI/ML Engineer</span>
+                        <span class="interest-badge">Machine Learning Engineer</span>
+                        <span class="interest-badge">Data Scientist</span>
+                        <span class="interest-badge">AI Developer</span>
+                        <span class="interest-badge">Python Developer</span>
+                        <span class="interest-badge">Software Engineer</span>
+                        <span class="interest-badge">Full Stack Developer</span>
+                        <span class="interest-badge">AI Generalist</span>
+                        <span class="interest-badge">Computer Vision Engineer</span>
+                        <span class="interest-badge">NLP Engineer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side Overview -->
+            <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                <h3 class="text-white mb-4 fw-semibold font-space">Engineering the Future with AI</h3>
+                
+                <h5 class="text-cyan mb-3 font-space"><i class="fa-solid fa-bullseye me-2"></i>Career Objective</h5>
+                <p class="text-gray mb-4 font-poppins">
+                    I am a recent Electronics and Communication Engineering graduate (2025) with internship experience in Data Science, Artificial Intelligence, Machine Learning, and Python Development. Passionate about building AI-driven solutions to solve real-world problems, I have gained hands-on experience in Machine Learning, Computer Vision, Natural Language Processing, Data Analytics, and Full Stack Development through industry projects. I am seeking an entry-level opportunity where I can contribute to innovative AI solutions, continuously enhance my technical expertise, and develop intelligent applications that create meaningful business impact.
+                </p>
+
+                <div class="row g-4 mb-4">
+                    <!-- My Strengths -->
+                    <div class="col-md-6">
+                        <div class="about-info-box glass-panel p-3 rounded-3 h-100">
+                            <h6 class="text-gradient font-space mb-2"><i class="fa-solid fa-dumbbell me-2"></i>My Strengths</h6>
+                            <p class="text-gray small font-poppins mb-0">
+                                My biggest strengths are my ability to learn new technologies quickly, analyze problems logically, and develop practical AI-driven solutions. I enjoy collaborating with teams, communicating ideas effectively, and approaching challenges with a positive, solution-oriented mindset.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Areas for Improvement -->
+                    <div class="col-md-6">
+                        <div class="about-info-box glass-panel p-3 rounded-3 h-100">
+                            <h6 class="text-gradient font-space mb-2"><i class="fa-solid fa-chart-line-up me-2"></i>Areas for Improvement</h6>
+                            <p class="text-gray small font-poppins mb-0">
+                                Earlier, I tended to spend extra time refining every solution to make it perfect. Through internship experience, I learned the importance of balancing quality with deadlines. I now prioritize tasks effectively, manage my time efficiently, and focus on delivering reliable, well-tested solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Soft Skills Cards Section -->
+        <div class="mt-5">
+            <h4 class="text-white text-center mb-5 font-space"><i class="fa-solid fa-users text-cyan me-2"></i>Professional (Soft) Skills</h4>
+            <div class="row g-4 justify-content-center">
+                <!-- Skill 1: Problem Solving -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="achievement-card glass-panel p-4 rounded-4 text-center h-100" data-tilt data-tilt-max="10">
+                        <div class="ach-icon bg-cyan-subtle text-cyan p-3 rounded-circle mx-auto mb-3">
+                            <i class="fa-solid fa-lightbulb fa-2x"></i>
+                        </div>
+                        <h5 class="text-white font-space mb-2">Problem Solving</h5>
+                        <p class="text-gray small mb-0 font-poppins">Logical approach to troubleshooting systems, debugging neural nets, and engineering business pipelines.</p>
+                    </div>
+                </div>
+                <!-- Skill 2: Communication -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="achievement-card glass-panel p-4 rounded-4 text-center h-100" data-tilt data-tilt-max="10">
+                        <div class="ach-icon bg-purple-subtle text-purple p-3 rounded-circle mx-auto mb-3">
+                            <i class="fa-solid fa-comments fa-2x"></i>
+                        </div>
+                        <h5 class="text-white font-space mb-2">Communication</h5>
+                        <p class="text-gray small mb-0 font-poppins">Articulating complex machine learning models, reporting statistics, and presenting documentation clearly.</p>
+                    </div>
+                </div>
+                <!-- Skill 3: Time Management -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="achievement-card glass-panel p-4 rounded-4 text-center h-100" data-tilt data-tilt-max="10">
+                        <div class="ach-icon bg-blue-subtle text-blue p-3 rounded-circle mx-auto mb-3">
+                            <i class="fa-solid fa-clock fa-2x"></i>
+                        </div>
+                        <h5 class="text-white font-space mb-2">Time Management</h5>
+                        <p class="text-gray small mb-0 font-poppins">Balancing developmental quality against release schedules, task prioritization, and structured sprints.</p>
+                    </div>
+                </div>
+                <!-- Skill 4: Team Collaboration -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-card glass-panel p-4 rounded-4 text-center h-100" data-tilt data-tilt-max="10">
+                        <div class="ach-icon bg-cyan-subtle text-cyan p-3 rounded-circle mx-auto mb-3">
+                            <i class="fa-solid fa-users-gear fa-2x"></i>
+                        </div>
+                        <h5 class="text-white font-space mb-2">Team Collaboration</h5>
+                        <p class="text-gray small mb-0 font-poppins">Active coordination with developers, versioning code collectively on GitHub, and supporting project plans.</p>
+                    </div>
+                </div>
+                <!-- Skill 5: Adaptability -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="achievement-card glass-panel p-4 rounded-4 text-center h-100" data-tilt data-tilt-max="10">
+                        <div class="ach-icon bg-purple-subtle text-purple p-3 rounded-circle mx-auto mb-3">
+                            <i class="fa-solid fa-sliders fa-2x"></i>
+                        </div>
+                        <h5 class="text-white font-space mb-2">Adaptability</h5>
+                        <p class="text-gray small mb-0 font-poppins">Quick to explore new frameworks (e.g. LLMs, generative models) and integrate toolsets under compressed timelines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

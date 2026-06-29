@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Manjima S B | Contact{% endblock %}
+
+{% block content %}
+<section id="contact" class="section-padding bg-darker min-vh-100">
+    <div class="container py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <span class="subtitle text-cyan text-uppercase tracking-wider">Get In Touch</span>
+            <h1 class="title fw-bold text-white mt-2">Contact <span class="text-gradient">Me</span></h1>
+            <div class="title-line mx-auto"></div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Contact Info Panel -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="contact-info glass-panel p-4 h-100 rounded-4">
+                    <h4 class="text-white font-space mb-4">Contact Information</h4>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-cyan-subtle text-cyan p-3 rounded-circle me-3">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-gray small block">Email Me</span>
+                            <a href="mailto:manjimasb07@gmail.com" class="text-white fw-bold text-decoration-none">manjimasb07@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-purple-subtle text-purple p-3 rounded-circle me-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="text-gray small block">Call / Message</span>
+                            <a href="tel:+919000000000" class="text-white fw-bold text-decoration-none">+91 XXXXX XXXXX</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-blue-subtle text-blue p-3 rounded-circle me-3">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-gray small block">Current Location</span>
+                            <span class="text-white fw-bold">Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon bg-cyan-subtle text-cyan p-3 rounded-circle me-3">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <div>
+                            <span class="text-gray small block">Home Town</span>
+                            <span class="text-white fw-bold">Thuckalay, Nagercoil, Kanyakumari, TN</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="badge bg-cyan text-dark me-2 fw-bold p-2"><i class="fa-solid fa-circle-check"></i> Immediate Joiner</span>
+                        <span class="badge bg-purple text-white fw-bold p-2"><i class="fa-solid fa-plane-departure"></i> Open to Relocate</span>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="https://github.com" target="_blank" class="social-btn me-2" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-btn me-2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Wrapper -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+                <div class="contact-form-wrapper glass-panel p-4 rounded-4 h-100">
+                    <h4 class="text-white font-space mb-4">Send A Message</h4>
+                    
+                    <form id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-gradient btn-lg w-100 hover-lift">
+                                    <span id="btnText"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</span>
+                                    <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <!-- Alert Status Container -->
+                    <div id="formAlert" class="alert mt-4 d-none" role="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
