@@ -203,9 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const spinner = document.getElementById('btnSpinner');
             const btnText = document.getElementById('btnText');
 
-            // TODO: Replace these placeholders with your actual EmailJS IDs
-            const serviceId = "YOUR_SERVICE_ID";
-            const templateId = "YOUR_TEMPLATE_ID";
+            // EmailJS Credentials
+            const serviceId = "service_0486ew6";
+            const templateId = "template_rqmvsk8";
 
             if (serviceId === "YOUR_SERVICE_ID" || templateId === "YOUR_TEMPLATE_ID") {
                 formAlert.classList.remove('d-none', 'alert-success');
