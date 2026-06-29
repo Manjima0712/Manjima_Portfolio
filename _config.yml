@@ -1,0 +1,14 @@
+# Site Settings
+title: Manjima S B | Portfolio
+description: "Electronics & Communication Engineering Graduate specializing in AI, ML, Data Science, and Python Development."
+author: Manjima S B
+url: "https://manjima0712.github.io"
+baseurl: "/Manjima_Portfolio"
+
+# Social Links
+github_username: Manjima0712
+linkedin_username: manjima-s-b
+
+# Build Settings
+theme: null
+plugins: []
